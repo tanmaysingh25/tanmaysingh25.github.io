@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tanmay Singh</title>
+<meta name="description" content="Tanmay Singh, PhD candidate in economics at Jönköping International Business School. Political economy and development economics.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: one narrow column, plain academic page. */
+:root {
+  --bg: #ffffff;
+  --ink: #1c1c1c;
+  --muted: #5f6368;
+  --rule: #e4e4e4;
+  --link: #1a5fb4;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #141414; --ink: #e8e8e8; --muted: #a3a3a3; --rule: #2c2c2c; --link: #8ab4f8; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #141414; --ink: #e8e8e8; --muted: #a3a3a3; --rule: #2c2c2c; --link: #8ab4f8; color-scheme: dark; }
+
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.6; }
+main {
+  max-width: 720px; margin: 0 auto;
+  padding-block: 48px 64px;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+h1 { font-size: 2.1rem; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
+nav { display: flex; gap: 20px; margin-bottom: 28px; font-size: 1rem; }
+
+.top { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 28px; align-items: start; }
+.top img { width: 180px; max-width: 100%; height: auto; border-radius: 4px; }
+.top p { margin: 0 0 12px; }
+.contact { color: var(--muted); font-size: 0.98rem; }
+
+h2 { font-size: 1.3rem; font-weight: 600; margin: 44px 0 16px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+.paper { margin-bottom: 22px; }
+.paper h3 { font-size: 1.05rem; font-weight: 600; margin: 0; line-height: 1.4; }
+.paper .meta { color: var(--muted); margin: 2px 0 0; }
+.paper p { margin: 6px 0 0; }
+.paper .links { margin-top: 4px; font-size: 0.97rem; }
+.teach { list-style: none; padding: 0; margin: 0; }
+.teach li { display: flex; justify-content: space-between; gap: 16px; padding: 6px 0; border-bottom: 1px solid var(--rule); }
+.teach li span:last-child { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+footer { margin-top: 56px; color: var(--muted); font-size: 0.88rem; }
+
+@media (max-width: 560px) {
+  .top { grid-template-columns: 1fr; gap: 18px; }
+  .top img { width: 150px; }
+}
+</style>
+</head>
+<body>
+<main>
+  <h1>Tanmay Singh</h1>
+  <nav>
+    <a href="#research">Research</a>
+    <a href="papers/Singh_CV.pdf" target="_blank" rel="noopener">CV</a>
+    <a href="#teaching">Teaching</a>
+  </nav>
+
+  <div class="top">
+    <img src="portrait.jpg" alt="Tanmay Singh" width="700" height="835">
+    <div>
+      <p>I am a PhD candidate in Economics at <a href="https://ju.se/en/about-us/jonkoping-international-business-school.html" target="_blank" rel="noopener">Jönköping International Business School</a>. <strong>I am on the 2026–27 academic job market.</strong></p>
+      <p>I am an applied microeconomist studying how political institutions, representation and group identity shape public policy and development outcomes for historically marginalised communities, with applications in India and cross-country settings. My job market paper uses India's 2008 Delimitation, the world's largest redistricting exercise, as a natural experiment and satellite data to show that electing indigenous representatives to state legislatures increases local forest cover, with the largest gains near mining sites and in sparsely forested areas. I work at the intersection of political economy and development economics, combining causal inference methods, including difference-in-differences, event studies, synthetic control, instrumental variables and matching, with large administrative, survey, satellite and text data.</p>
+      <p class="contact"><a href="papers/Singh_CV.pdf" target="_blank" rel="noopener">CV</a> · tanmay.singh@ju.se</p>
+    </div>
+  </div>
+
+  <section id="research">
+    <h2>Job Market Paper</h2>
+    <div class="paper">
+      <h3><a href="papers/Singh_JMP.pdf" target="_blank" rel="noopener">Who Governs the Forest? Politician Identity and Forest Conservation</a></h3>
+      <p>This paper asks whether the identity of elected representatives affects how forests are governed. I exploit India's 2008 Delimitation, the world's largest redistricting exercise, as a natural experiment that changed the reservation status of state assembly constituencies from open competition to seats reserved exclusively for historically marginalized indigenous communities, thereby generating plausibly exogenous variation in politician identity. Using a staggered difference-in-differences design and satellite-derived forest cover data from 2001 to 2020, I find that indigenous political representation increases local forest cover by 10.5%. The effect is concentrated in villages with low baseline forest cover and is largest near mining sites, declining monotonically with distance. I also show that political quotas disrupt the political equilibrium: indigenous representation brings younger, more female winners into office through more competitive elections, reshaping who holds power, not just who holds office. I further find no evidence that these gains erode once electoral quotas are withdrawn. These findings speak to a fundamental question in political economy: who governs shapes what is governed, and democratic representation of historically excluded indigenous communities can deliver meaningful environmental dividends, with direct implications for climate policy and debates on indigenous governance across the developing world.</p>
+    </div>
+
+    <h2>Publications</h2>
+    <div class="paper">
+      <h3><a href="https://doi.org/10.1017/S0007123424000644" target="_blank" rel="noopener">Party Positioning Under Populist State Leaders</a></h3>
+      <p class="meta">with Marcel Garz · <em>British Journal of Political Science</em>, 2024, 54(4), 1362–1384</p>
+    </div>
+
+    <h2>Working Papers</h2>
+    <div class="paper">
+      <h3><a href="papers/Singh_Electrification.pdf" target="_blank" rel="noopener">From Dim Futures to Bright Horizons? Rural Electrification and Women’s Empowerment in India</a></h3>
+      <p class="meta">Submitted</p>
+    </div>
+    <div class="paper">
+      <h3>Populism and Fiscal Policy: Evidence on Ideological Heterogeneity</h3>
+      <p class="meta">with Piergiuseppe Fortunato and Marco Pecoraro · Submitted</p>
+    </div>
+
+    <h2>Work in Progress</h2>
+    <div class="paper"><h3>Populist State Leaders and Sovereign Credit Ratings</h3></div>
+    <div class="paper"><h3>Fiscal Incentives, Resource Extraction and Deforestation</h3></div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <p class="meta" style="color:var(--muted);margin:0 0 12px">Teaching Assistant, Jönköping International Business School</p>
+    <ul class="teach">
+      <li><span>Sweden in the Global Economy</span><span>2022–2026</span></li>
+      <li><span>International Macro and Finance</span><span>2024–2026</span></li>
+      <li><span>Advanced Macroeconomics</span><span>2023–2025</span></li>
+      <li><span>Development Economics</span><span>2023–2024</span></li>
+      <li><span>Corporate Finance 1</span><span>2026</span></li>
+      <li><span>Introduction to Economic Thought</span><span>2025</span></li>
+      <li><span>Applied Economics for Decision-Making</span><span>2024</span></li>
+    </ul>
+  </section>
+
+  <footer>Last updated November 2026</footer>
+</main>
+</body>
+</html>
